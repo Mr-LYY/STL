@@ -1,0 +1,28 @@
+.middle__ranking-title {
+
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 1.21;
+    color:rgb(102, 68, 255);
+    padding: 0;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .middle__ranking-title {
+
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .middle__ranking-title {
+
+        font-size: 20px;
+    }
+}

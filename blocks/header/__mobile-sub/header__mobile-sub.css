@@ -1,0 +1,18 @@
+.header__mobile-sub {
+
+
+    min-height: 330px;
+    min-width: 170px;
+    position: absolute;
+    background-color: white;
+    top: 70px;
+    border-radius: 0 0 10px 0;
+}
+
+@media screen and (max-width: 666px) {
+
+    .header__mobile-sub {
+
+        min-height: 180px;
+    }
+}

@@ -1,0 +1,18 @@
+.header__logo {
+
+    background-image: url(../../../images/Talisman_logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 66px;
+    min-width: 96px;
+}
+
+/**@media screen and (max-width: 666px) {
+
+    .header__logo {
+
+        min-width: 12vw;
+        min-height: 12vw;
+    }
+    
+}

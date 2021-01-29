@@ -1,0 +1,16 @@
+.header__score-subtext {
+
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 14px;
+    margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+
+    .header__score-subtext {
+
+        font-size: 11px;
+    }
+}

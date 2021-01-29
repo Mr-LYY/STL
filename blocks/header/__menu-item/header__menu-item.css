@@ -1,0 +1,27 @@
+.header__menu-item {
+
+    display: block;
+    position: relative;
+    padding: 0;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin: 0;
+    transition: 0.3s ease-out;
+
+}
+
+.header__menu-item:hover .header__links {
+
+    color: blueviolet;    
+}
+
+.header__menu-item:hover .header__sub-menu {
+
+    display: block;
+}
+
+.header__menu-item:hover .header__menu-arrow {
+
+    transform: translate(10px, 0) rotate(180deg);
+    fill: black;
+}

@@ -1,0 +1,15 @@
+.middle__ranking-item {
+    
+    display: grid;
+    grid-template-columns: repeat(2, max-content) minmax(20px, 360px) max-content;
+    align-items: center;
+    box-shadow: 0 0 2px #d0d0f8;
+}
+
+@media screen and (max-width: 768px) {
+
+    .middle__ranking-item {
+
+        grid-template-columns: repeat(2, max-content) 1fr max-content;
+    }
+}

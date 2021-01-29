@@ -1,0 +1,36 @@
+.header__sub-link {
+
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.21;
+    color:rgba(84, 84, 84, 1);
+    margin: 0;    
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+    background-color: white;
+}
+
+.header__sub-link:first-of-type {
+
+    padding-top: 30px;
+}
+
+.header__sub-link:last-of-type {    
+    
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 666px) {
+
+    .header__sub-link {
+
+        padding: 0;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 38px;
+    }
+}

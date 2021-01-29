@@ -1,0 +1,39 @@
+/*Founders*/
+
+@import url(../blocks/founders/founders.css);
+@import url(../blocks/founders/__item/founders__item.css);
+@import url(../blocks/founders/__name-lyulekin/founders__name-lyulekin.css);
+@import url(../blocks/founders/__name-zorkin/founders__name-zorkin.css);
+@import url(../blocks/founders/__photo-case/founders__photo-case.css);
+@import url(../blocks/founders/__photo/founders__photo.css);
+@import url(../blocks/founders/__text-lyulekin/founders__text-lyulekin.css);
+@import url(../blocks/founders/__textBold-lyulekin/founders__textBold-lyulekin.css);
+@import url(../blocks/founders/__textBold-zorkin/founders__textBold-zorkin.css);
+@import url(../blocks/founders/__text-zorkin/founders__text-zorkin.css);
+@import url(../blocks/founders/__title/founders__title.css);
+
+
+/*Stl*/
+
+@import url(../blocks/stl/stl.css);
+@import url(../blocks/stl/__image/stl__image.css);
+@import url(../blocks/stl/__text-first/stl__text-first.css);
+@import url(../blocks/stl/__text-second/stl__text-second.css);
+@import url(../blocks/stl/__text-third/stl__text-third.css);
+@import url(../blocks/stl/__title/stl__title.css);
+@import url(../blocks/stl/__line/stl__line.css);
+
+
+/*Russian Tennis*/
+
+@import url(../blocks/russian-tennis/russian-tennis.css);
+@import url(../blocks/russian-tennis/__first-title/russian-tennis__first-title.css);
+@import url(../blocks/russian-tennis/__sec-title/russian-tennis__sec-title.css);
+@import url(../blocks/russian-tennis/__third-title/russian-tennis__third-title.css);
+@import url(../blocks/russian-tennis/__top/russian-tennis__top.css);
+@import url(../blocks/russian-tennis/__middle/russian-tennis__middle.css);
+@import url(../blocks/russian-tennis/__bottom/russian-tennis__bottom.css);
+@import url();
+@import url();
+@import url();
+@import url();

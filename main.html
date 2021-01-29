@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школьная Теннисная Лига</title>
+    <link rel="stylesheet" type="text/css" href="./pages/main.css">
+</head>
+<body>
+    <div class="background">
+        <div class="root">
+            <header class="header">
+                <a class="header__logo-link" href="#"><div class="header__logo-case">
+                    <div class="header__logo"></div>
+                    <h1 class="header__title">Школьная Теннисная Лига</h1>
+                </div></a>
+                <a class="header__online-score" href="#">
+                    <div>
+                        <p class="header__score-text">Онлайн счет</p>
+                        <p class="header__score-subtext">текущих матчей</p>
+                    </div>
+                    <img src="./images/online-score.svg">
+                </a>
+            </header>
+
+            <!-- Main__header -->
+
+            <nav class="header__low">
+                <div class="header__menu">
+                    <li class="header__menu-item"><a class="header__links" href="#">Турниры</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="#">Рейтинг</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="https://schooltennisliga.printdirect.ru/">Магазин</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="#">О Лиге<svg class="header__menu-arrow" viewBox="0 0 5 9">
+                        <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                    </svg></a>
+                        <ul class="header__sub-menu">
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">О Лиге</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">Клубы</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">Документы</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="header__enter">
+                    <p class="header__enter-item">Вход</p>
+                    <div class="header__enter-icon"></div>
+                </div>
+            </nav>
+
+
+            <!-- Moble__header -->
+
+            <nav class="header__mobile">
+                <div id="header__menu-btn">
+                    <span class="icon"></span>
+                    <span class="text">меню</span>
+                </div>
+                <div class="header__mobile-sub header__mobile-sub_type_close">
+                    <div class="header__menu">
+                    <li class="header__menu-item"><a class="header__links" href="#">Турниры</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="#">Рейтинг</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="#">Магазин</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="#">О Лиге<svg class="header__menu-arrow" viewBox="0 0 5 9">
+                        <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                    </svg></a>
+                        <ul class="header__sub-menu">
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">О Лиге</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">Клубы</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">Документы</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                </div>
+                <div class="header__enter">
+                    <p class="header__enter-item">Вход</p>
+                    <div class="header__enter-icon"></div>
+                </div>
+            </nav>
+    
+            <main>
+                <section class="banner">
+                    <img class="banner__left" src="./images/green.png">
+                    <img class="banner__right" src="./images/yellow.png"> 
+                </section>
+    
+                <section class="middle">
+                    <ul class="middle__calendar">
+                        <li class="middle__ranking-top">
+                            <p class="middle__ranking-title">Календарь</p>
+                            <div class="middle__ranking-selector">
+                                <p class="middle__category-title">Выберите категорию</p>
+                                <div class="middle__category-icons">
+                                    <img class="middle__category-icon" src="./images/category_selector-items/ball_red.svg">
+                                    <img class="middle__category-icon" src="./images/category_selector-items/ball_orange.svg">
+                                    <img class="middle__category-icon" src="./images/category_selector-items/ball_green.svg">
+                                    <img class="middle__category-icon" src="./images/category_selector-items/ball_yellow12.svg">
+                                    <img class="middle__category-icon" src="./images/category_selector-items/ball_yellow15.svg"> 
+                                </div>
+                        </li>
+                        <li class="middle__calendar-item">
+                            <p class="middle__calendar-number">1</p>
+                            <div class="middle__calendar-image"></div>
+                            <p class="middle__calendar-data">12.03.21</p>
+                            <a href="#" target="_blank" class="middle__tournament-name">Москва</a>
+                            <p class="middle__ranking-points">14:00 - 16:00</p>
+                        </li>
+                        <li class="middle__calendar-item">
+                            <p class="middle__calendar-number">2</p>
+                            <div class="middle__calendar-image"></div>
+                            <p class="middle__calendar-data">12.03.21</p>
+                            <a href="#" target="_blank" class="middle__tournament-name">Владимир</a>
+                            <p class="middle__ranking-points">14:00 - 16:00</p>
+                        </li>
+                        <li class="middle__calendar-item">
+                            <p class="middle__calendar-number">3</p>
+                            <div class="middle__calendar-image"></div>
+                            <p class="middle__calendar-data">12.03.21</p>
+                            <a href="#" target="_blank" class="middle__tournament-name">Москва</a>
+                            <p class="middle__ranking-points">14:00 - 16:00</p>
+                        </li>
+                        <li class="middle__calendar-item">
+                            <p class="middle__calendar-number">4</p>
+                            <div class="middle__calendar-image"></div>
+                            <p class="middle__calendar-data">12.03.21</p>
+                            <a href="#" target="_blank" class="middle__tournament-name">Калининград</a>
+                            <p class="middle__ranking-points">14:00 - 16:00</p>
+                        </li>
+                        <li class="middle__calendar-item">
+                            <p class="middle__calendar-number">5</p>
+                            <div class="middle__calendar-image"></div>
+                            <p class="middle__calendar-data">12.03.21</p>
+                            <a href="#" target="_blank" class="middle__tournament-name">Новосибирск</a>
+                            <p class="middle__ranking-points">14:00 - 16:00</p>
+                        </li>
+                        <li class="middle__calendar-item">
+                            <p class="middle__calendar-number">6</p>
+                            <div class="middle__calendar-image"></div>
+                            <p class="middle__calendar-data">12.03.21</p>
+                            <a href="#" target="_blank" class="middle__tournament-name">Москва</a>
+                            <p class="middle__ranking-points">14:00 - 16:00</p>
+                        </li>
+                        <li class="middle__calendar-item">
+                            <p class="middle__calendar-number">7</p>
+                            <div class="middle__calendar-image"></div>
+                            <p class="middle__calendar-data">12.03.21</p>
+                            <a href="#" target="_blank" class="middle__tournament-name">Москва</a>
+                            <p class="middle__ranking-points">14:00 - 16:00</p>
+                        </li>
+                        <li class="middle__calendar-item">
+                            <p class="middle__calendar-number">8</p>
+                            <div class="middle__calendar-image"></div>
+                            <p class="middle__calendar-data">12.03.21</p>
+                            <a href="#" target="_blank" class="middle__tournament-name">Новоуральск</a>
+                            <p class="middle__ranking-points">14:00 - 16:00</p>
+                        </li>
+                        <li class="middle__calendar-item">
+                            <p class="middle__calendar-number">9</p>
+                            <div class="middle__calendar-image"></div>
+                            <p class="middle__calendar-data">12.03.21</p>
+                            <a href="#" target="_blank" class="middle__tournament-name">Комсомольск-на-Амуре</a>
+                            <p class="middle__ranking-points">14:00 - 16:00</p>
+                        </li>
+                        <li class="middle__calendar-item">
+                            <p class="middle__calendar-number">10</p>
+                            <div class="middle__calendar-image"></div>
+                            <p class="middle__calendar-data">12.03.21</p>
+                            <a href="#" target="_blank" class="middle__tournament-name">Санкт-Петербург</a>
+                            <p class="middle__ranking-points">14:00 - 16:00</p>
+                        </li>
+    
+                    </ul>
+                    <ul class="middle__ranking">
+                        <li class="middle__ranking-top">
+                            <p class="middle__ranking-title">Рейтинг</p>
+                            <div class="middle__ranking-selector">
+                                <p class="middle__category-title">Выберите категорию</p>
+                                <div class="middle__category-icons">
+                                    <img class="middle__category-icon" src="./images/category_selector-items/ball_red.svg">
+                                    <img class="middle__category-icon" src="./images/category_selector-items/ball_orange.svg">
+                                    <img class="middle__category-icon" src="./images/category_selector-items/ball_green.svg">
+                                    <img class="middle__category-icon" src="./images/category_selector-items/ball_yellow12.svg">
+                                    <img class="middle__category-icon" src="./images/category_selector-items/ball_yellow15.svg"> 
+                                </div>
+                            </div>
+                        </li>
+                        <li class="middle__ranking-item">
+                            <p class="middle__ranking-number">1</p>
+                            <div class="middle__ranking-image"></div>
+                            <a href="#" target="_blank" class="middle__ranking-name">Катя Петрова</a>
+                            <p class="middle__ranking-points">1920</p>
+                        </li>
+                        <li class="middle__ranking-item">
+                            <p class="middle__ranking-number">2</a>
+                            <div class="middle__ranking-image"></div>
+                            <a href="#" target="_blank" class="middle__ranking-name">Вася Ершов</a>
+                            <p class="middle__ranking-points">983</p>
+                        </li>
+                        <li class="middle__ranking-item">
+                            <p class="middle__ranking-number">3</a>
+                            <div class="middle__ranking-image"></div>
+                            <a href="#" target="_blank" class="middle__ranking-name">Абдурахман Сизый</a>
+                            <p class="middle__ranking-points">784</p>
+                        </li>
+                        <li class="middle__ranking-item">
+                            <p class="middle__ranking-number">4</a>
+                            <div class="middle__ranking-image"></div>
+                            <a href="#" target="_blank" class="middle__ranking-name">Конь Троянский</a>
+                            <p class="middle__ranking-points">455</p>
+                        </li>
+                        <li class="middle__ranking-item">
+                            <p class="middle__ranking-number">5</a>
+                            <div class="middle__ranking-image"></div>
+                            <a href="#" target="_blank" class="middle__ranking-name">Иван Грозный</a>
+                            <p class="middle__ranking-points">453</p>
+                        </li>
+                        <li class="middle__ranking-item">
+                            <p class="middle__ranking-number">6</a>
+                            <div class="middle__ranking-image"></div>
+                            <a href="#" target="_blank" class="middle__ranking-name">Василиса Премудрая</a>
+                            <p class="middle__ranking-points">324</p>
+                        </li>
+                        <li class="middle__ranking-item">
+                            <p class="middle__ranking-number">7</a>
+                            <div class="middle__ranking-image"></div>
+                            <a href="#" target="_blank" class="middle__ranking-name">Филипп Киркоров</a>
+                            <p class="middle__ranking-points">287</p>
+                        </li>
+                        <li class="middle__ranking-item">
+                            <p class="middle__ranking-number">8</a>
+                            <div class="middle__ranking-image"></div>
+                            <a href="#" target="_blank" class="middle__ranking-name">Мурад Селехитдин-Аглы</a>
+                            <p class="middle__ranking-points">250</p>
+                        </li>
+                        <li class="middle__ranking-item">
+                            <p class="middle__ranking-number">9</a>
+                            <div class="middle__ranking-image"></div>
+                            <a href="#" target="_blank" class="middle__ranking-name">Анастасия Патричевская</a>
+                            <p class="middle__ranking-points">230</p>
+                        </li>
+                        <li class="middle__ranking-item">
+                            <p class="middle__ranking-number">10</a>
+                            <div class="middle__ranking-image"></div>
+                            <a href="#" target="_blank" class="middle__ranking-name">Сергей Семёныч</a>
+                            <p class="middle__ranking-points">150</p>
+                        </li>
+                    </ul>
+                </section>
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <section class="instagram-widget"><div class="elfsight-app-cac60230-afc4-4a02-b985-71fed5b64645"></div></section>
+                
+            </main>
+            <footer class="footer">
+                <ul class="footer__contact">
+                    <li class="footer__post">
+                        <a class="footer_links" href="mailto:info@s-tennisliga.ru" target="_blank">
+                            <img src="./images/footer/post.svg" class="footer__icon-post">
+                            <p class="footer__post-text">info@s-tennisliga.ru</p>
+                        </a>
+                    </li>
+                    <li class="footer__phone">
+                        <a class="footer_links" href="tel:+7 965 109 61 55" target="_blank">
+                            <img src="./images/footer/phone.svg" class="footer__icon-phone">
+                            <p class="footer__phone-text">+7 965 109 61 55</p>
+                        </a>
+                    </li>
+                    <li class="footer__insta">
+                        <a class="footer_links" href="https://www.instagram.com/school_tennis_liga" target="_blank">
+                            <img src="./images/footer/insta.svg" class="footer__icon-insta">
+                            <p class="footer__insta-text">school_tennis_liga</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__low">
+                    <a href="#" target="_blank" class="footer__rights">&copy; 2020 Школьная Теннисная Лига</a>
+                    <a href="#" target="_blank" class="footer__politics">Политика конфиденциальности</a>
+                </div>
+            </footer>
+            
+        </div>
+    </div>
+<script src="./scripts/mobile_menu.js"></script>
+</body>
+</html>

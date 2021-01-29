@@ -1,0 +1,18 @@
+.header__sub-menu {
+
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 666px) {
+
+    .header__sub-menu {
+
+        left: -20px;
+    }
+}

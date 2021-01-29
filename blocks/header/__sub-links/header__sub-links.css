@@ -1,0 +1,11 @@
+.header__sub-links {
+
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.header__sub-links:hover {
+
+    color: blueviolet;
+}

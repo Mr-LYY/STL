@@ -1,0 +1,7 @@
+.first-stage {
+
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 100px 70px;
+}

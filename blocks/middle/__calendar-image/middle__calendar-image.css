@@ -1,0 +1,31 @@
+.middle__calendar-image {
+
+    background-image: url(../../../images/category_selector-items/ball_yellow12.svg);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 4px 20px 4px 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .middle__calendar-image {
+
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 666px) {
+
+    .middle__calendar-image {
+
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+}

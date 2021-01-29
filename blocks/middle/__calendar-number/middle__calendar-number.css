@@ -1,0 +1,21 @@
+.middle__calendar-number {
+
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.21;
+    color:rgba(84, 84, 84, 1);
+    min-width: 20px;
+    padding: 0;
+    padding-left: 10px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .middle__calendar-number {
+
+        font-size: 12px;
+    }
+}

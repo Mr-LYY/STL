@@ -1,0 +1,14 @@
+.header__online-score  {
+
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 475px) {
+
+    .header__online-score {
+
+        padding-top: 20px;
+    }    
+}

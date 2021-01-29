@@ -1,0 +1,5 @@
+.header__mobile-sub_type_close {
+
+    display: none;
+    animation: close_mobile_sub 1s ease-in-out;
+}

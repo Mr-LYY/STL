@@ -1,0 +1,78 @@
+
+#header__menu-btn {
+
+    display: block;
+    position: relative;    
+    margin: 24px auto 12px 30px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+#header__menu-btn:before, #header__menu-btn:after {
+    content: '';
+    width: 100%;
+    height: 8px;
+    background-color: cornflowerblue;
+    display: block;
+    position: absolute;
+    border-radius: 20px;
+}
+
+#header__menu-btn:before {
+    transform-origin: left center;
+}
+#header__menu-btn:after {
+    right: 0;
+    top: 15px;
+    transform-origin: right center;
+}
+
+.open #header__menu-btn:after {
+    right: 11px;
+}
+
+#header__menu-btn .text {
+    color: cornflowerblue;
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    display: block;
+    position: absolute;
+    bottom: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+#header__menu-btn:hover {
+    cursor: pointer;
+}
+#header__menu-btn.open:before {
+    animation: topBar_open 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+#header__menu-btn.open:after {
+    animation: bottomBar_open 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+#header__menu-btn.open .text {
+    animation: menuLabel_open 1s ease-in;
+    animation-fill-mode: forwards;
+}
+#header__menu-btn.close:before {
+    animation: topBar_close 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+#header__menu-btn.close:after {
+    animation: bottomBar_close 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+#header__menu-btn.close .text {
+    animation: menuLabel_close 1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.open {
+
+    z-index: 1;
+}

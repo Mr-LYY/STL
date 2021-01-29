@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("CenturyGothic_Regular.woff") format("woff2"),
+         url("CenturyGothic_Regular.woff") format("woff");
+  }
+
+@font-face {
+    font-family: 'Gothic';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("CenturyGothic_Italic.woff2") format("woff2"),
+         url("CenturyGothic_Italic.woff") format("woff");
+  }
+  
+@font-face {
+    font-family: 'Gothic';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("CenturyGothic_Bold.woff2") format("woff2"),
+         url("CenturyGothic_Bold.woff") format("woff");
+  }
+
+@font-face {
+    font-family: 'Gothic';
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url("CenturyGothic_BoldItalic.woff2") format("woff2"),
+         url("CenturyGothic_BoldItalic.woff") format("woff");
+  }
+
+  

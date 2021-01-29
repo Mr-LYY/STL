@@ -1,0 +1,33 @@
+.middle__ranking-name {
+    
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.21;
+    color: rgb(32 147 255);
+    min-width: 25.78125%;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.2s;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .middle__ranking-name {
+
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+
+    .middle__ranking-name {
+
+        font-size: 12px;
+    }
+}

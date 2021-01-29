@@ -1,0 +1,21 @@
+.middle__ranking-image {
+    
+    background-image: url(../../../images/инст-аватар.jpg);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 4px 10px 4px 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .middle__ranking-image {
+
+        width: 25px;
+        height: 25px;
+    }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школьная Теннисная Лига</title>
+    <link rel="stylesheet" type="text/css" href="./pages/main.css">
+    <link rel="stylesheet" type="text/css" href="./pages/reg-form.css">
+</head>
+<body>
+    <div class="background">
+        <div class="root">
+            <header class="header">
+                <a class="header__logo-link" href="#"><div class="header__logo-case">
+                    <div class="header__logo"></div>
+                    <h1 class="header__title">Школьная Теннисная Лига</h1>
+                </div></a>
+                <a class="header__online-score" href="#">
+                    <div>
+                        <p class="header__score-text">Онлайн счет</p>
+                        <p class="header__score-subtext">текущих матчей</p>
+                    </div>
+                    <img src="./images/online-score.svg">
+                </a>
+            </header>
+
+            <!-- Main__header -->
+
+            <nav class="header__low">
+                <div class="header__menu">
+                    <li class="header__menu-item"><a class="header__links" href="#">Турниры</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="#">Рейтинг</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="https://schooltennisliga.printdirect.ru/">Магазин</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="#">О Лиге<svg class="header__menu-arrow" viewBox="0 0 5 9">
+                        <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                    </svg></a>
+                        <ul class="header__sub-menu">
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">О Лиге</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">Клубы</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">Документы</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="header__enter">
+                    <p class="header__enter-item">Вход</p>
+                    <div class="header__enter-icon"></div>
+                </div>
+            </nav>
+
+
+            <!-- Moble__header -->
+
+            <nav class="header__mobile">
+                <div id="header__menu-btn">
+                    <span class="icon"></span>
+                    <span class="text">меню</span>
+                </div>
+                <div class="header__mobile-sub header__mobile-sub_type_close">
+                    <div class="header__menu">
+                    <li class="header__menu-item"><a class="header__links" href="#">Турниры</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="#">Рейтинг</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="#">Магазин</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="#">О Лиге<svg class="header__menu-arrow" viewBox="0 0 5 9">
+                        <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                    </svg></a>
+                        <ul class="header__sub-menu">
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">О Лиге</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">Клубы</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">Документы</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                </div>
+                <div class="header__enter">
+                    <p class="header__enter-item">Вход</p>
+                    <div class="header__enter-icon"></div>
+                </div>
+            </nav>
+            <main>
+                <section class="first-stage">
+                    <img src="./images/talisman_hi-pose.svg">
+                    <div class="first-stage__left">
+                        <h2 class="first-stage__title">Спасибо, что решили зарегистрироваться в Школьной Теннисной Лиге!</h2>
+                        <p class="first-stage__subtitle">Приступим, это не займет много времени!</p>
+                        <form class="first-stage__form">
+                            <label for="name">Имя</label>
+                            <input type="text" id="first-stage__name" class="first-stage__name" placeholder="Иван" required>
+                            <label for="lastname">Фамилия</label>
+                            <input type="text" id="lastname" class="first-stage__lastname" placeholder="Иванов" required>
+                            <label for="patronymic">Отчество</label>
+                            <input type="text" id="patronymic" class="first-stage__patronymic" placeholder="Иванович" required>
+                            <label for="birthday">Дата Рождения</label>
+                            <input type="date" id="birthday" class="first-stage__birthday" placeholder="10.10.10" required>
+                            <label for="male"><input type="radio" name="sex-choice" class="first-stage__sex" value="male" id="male" required>Мужской</label>
+                            <label for="male"><input type="radio" name="sex-choice" class="first-stage__sex" value="female" id="female" required>Женский</label>
+                            <button class="first-stage__btn" type="submit">Следующий шаг</button>
+                        </form>
+                    </div>
+                    <!--<img class="first-stage__profile-image" src="./images/инст-аватар.jpg">-->
+                </section>
+            </main>
+            <footer class="footer">
+                <ul class="footer__contact">
+                    <li class="footer__post">
+                        <a class="footer_links" href="mailto:info@s-tennisliga.ru" target="_blank">
+                            <img src="./images/footer/post.svg" class="footer__icon-post">
+                            <p class="footer__post-text">info@s-tennisliga.ru</p>
+                        </a>
+                    </li>
+                    <li class="footer__phone">
+                        <a class="footer_links" href="tel:+7 965 109 61 55" target="_blank">
+                            <img src="./images/footer/phone.svg" class="footer__icon-phone">
+                            <p class="footer__phone-text">+7 965 109 61 55</p>
+                        </a>
+                    </li>
+                    <li class="footer__insta">
+                        <a class="footer_links" href="https://www.instagram.com/school_tennis_liga" target="_blank">
+                            <img src="./images/footer/insta.svg" class="footer__icon-insta">
+                            <p class="footer__insta-text">school_tennis_liga</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__low">
+                    <a href="#" target="_blank" class="footer__rights">&copy; 2020 Школьная Теннисная Лига</a>
+                    <a href="#" target="_blank" class="footer__politics">Политика конфиденциальности</a>
+                </div>
+            </footer>
+            
+        </div>
+    </div>
+<script src="./scripts/mobile_menu.js"></script>
+</body>
+</html>

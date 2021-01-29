@@ -1,0 +1,19 @@
+.banner {
+
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    min-height: 29%;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+
+    .banner {
+
+        flex-direction: column;
+        max-height: none;
+    }
+}

@@ -1,0 +1,19 @@
+.footer__contact {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    list-style: none;
+    border-bottom: 1px solid #D5D3D3; 
+}
+
+@media screen and (max-width: 666px) {
+
+    .footer__contact {
+
+        flex-direction: column;
+    }
+}

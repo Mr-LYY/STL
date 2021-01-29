@@ -1,0 +1,21 @@
+.header__low {
+
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgba(0,0,0, .2);
+    z-index: 1;
+}
+
+@media screen and (max-width: 666px) {
+
+    .header__low {
+        
+        display: none;
+    }
+}

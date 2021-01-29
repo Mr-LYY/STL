@@ -1,0 +1,10 @@
+.stl__text-second {
+
+    max-width: 49%;
+    font-size: 20px;
+    margin: 0;
+    margin-left: auto;
+    padding: 70px 70px 0 70px;
+    text-align: justify;
+    text-align-last: right;
+}

@@ -1,0 +1,14 @@
+.banner__left {
+
+    width: 49.5%;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .banner__left {
+
+        width: 99%;
+    }
+}

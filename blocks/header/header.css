@@ -1,0 +1,17 @@
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+}
+
+@media screen and (max-width: 475px) {
+
+    .header {
+
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+}

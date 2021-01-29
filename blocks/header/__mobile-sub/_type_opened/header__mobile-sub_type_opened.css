@@ -1,0 +1,5 @@
+.header__mobile-sub_type_opened {
+
+    display: block;
+    animation: open_mobile_sub 0,5s ease-in-out;
+}
