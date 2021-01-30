@@ -1,4 +1,12 @@
 .benefits__age {
 
-    
+    min-width: 300px;
+}
+
+@media screen and (max-width: 740px) {
+
+    .benefits__age {
+
+        display: none;
+    }
 }

@@ -4,3 +4,31 @@
     padding: 100px 160px;
     margin: 0;
 }
+
+
+
+
+@media screen and (max-width: 900px) {
+
+    .russian-tennis {
+
+        padding: 80px 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .russian-tennis {
+
+        padding: 80px 60px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .russian-tennis {
+
+        font-size: 16px;
+        padding: 60px 20px;
+    }
+}

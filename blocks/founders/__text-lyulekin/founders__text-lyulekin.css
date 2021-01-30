@@ -2,3 +2,11 @@
 
     font-size: 22px;
 }
+
+@media screen and (max-width: 425px) {
+
+    .founders__text-lyulekin {
+
+        font-size: 16px;
+    }
+}

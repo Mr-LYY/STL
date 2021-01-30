@@ -4,3 +4,11 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 666px) {
+
+    .meet__flex {
+
+        flex-direction: column;
+    }
+}

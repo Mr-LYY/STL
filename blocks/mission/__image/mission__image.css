@@ -3,4 +3,30 @@
     position: absolute;
     top: 0;
     left: 100px;
+    width: 41vw;
+}
+
+@media screen and (min-width: 1280px) {
+
+    .mission__image {
+
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+
+    .mission__image {
+
+        width: 315px;
+        left: 13.3vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .mission__image {
+
+        display: none;
+    }
 }

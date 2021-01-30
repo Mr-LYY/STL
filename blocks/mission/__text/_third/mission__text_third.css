@@ -1,0 +1,12 @@
+.mission__text_third {
+
+    max-width: none;
+}
+
+@media screen and (min-width: 1280px) {
+
+    .mission__text_third {
+
+        max-width: 60%;
+    }
+}

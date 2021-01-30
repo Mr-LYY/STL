@@ -7,3 +7,11 @@
     text-align: justify;
     text-align-last: right;
 }
+
+@media screen and (max-width: 425px) {
+
+    .russian-tennis__subtitle-answer {
+
+        font-size: 16px;
+    }
+}

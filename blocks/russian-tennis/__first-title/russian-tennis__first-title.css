@@ -10,3 +10,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media screen and (max-width: 1024px) {
+
+    .russian-tennis__first-title {
+
+        font-size: 7vw;
+    }
+}

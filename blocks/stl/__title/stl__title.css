@@ -8,3 +8,40 @@
     line-height: 0.95;
     color: cornflowerblue;
 }
+
+@media screen and (max-width: 1024px) {
+
+    .stl__title {
+
+        margin: 0;
+        margin-left: 160px;
+        font-size: 80px;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .stl__title {
+
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .stl__title {
+
+        font-size: 10vw;
+        margin-left: 60px;
+        max-width: 50vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .stl__title {
+
+        
+    }
+}

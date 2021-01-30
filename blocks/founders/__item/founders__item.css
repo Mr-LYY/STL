@@ -2,3 +2,12 @@
 
     width: 47%;
 }
+
+@media screen and (max-width: 900px) {
+
+    .founders__item {
+
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}

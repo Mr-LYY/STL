@@ -5,3 +5,19 @@
     padding: 70px 0 0;
     text-align: justify;
 }
+
+@media screen and (max-width: 900px) {
+
+    .russian-tennis__top {
+
+        padding: 40px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .russian-tennis__top {
+
+        font-size: 16px;
+    }
+}

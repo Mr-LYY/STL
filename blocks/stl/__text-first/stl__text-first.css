@@ -5,3 +5,38 @@
     margin: 0;
     padding: 100px 0 0 160px;
 }
+
+@media screen and (max-width: 1024px) {
+
+    .stl__text-first {
+
+        padding-top: 200px;
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .stl__text-first {
+
+        padding: 60px 80px 0 80px;
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .stl__text-first {
+
+        padding: 60px 60px 0 60px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .stl__text-first {
+
+        font-size: 16px;
+        padding:  40px 20px 0 20px;
+    }
+}

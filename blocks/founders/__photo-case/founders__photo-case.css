@@ -1,7 +1,26 @@
 .founders__photo-case {
 
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 0;
     padding-top: 100px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .founders__photo-case {
+
+        padding-top: 60px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .founders__photo-case {
+
+        font-size: 16px;
+        padding-top: 20px;
+    }
 }

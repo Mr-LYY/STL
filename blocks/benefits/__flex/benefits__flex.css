@@ -6,3 +6,21 @@
     margin: 0 auto;
     gap: 40px;
 }
+
+@media screen and (max-width: 666px) {
+
+    .benefits__flex {
+
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .benefits__flex {
+
+        font-size: 16px;
+        gap: 0;
+    }
+}

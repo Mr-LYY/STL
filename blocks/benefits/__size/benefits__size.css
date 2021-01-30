@@ -2,3 +2,11 @@
 
     margin-left: 40px;
 }
+
+@media screen and (max-width: 740px) {
+
+    .benefits__size {
+
+        display: none;
+    }
+}

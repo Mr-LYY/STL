@@ -1,0 +1,12 @@
+.benefits__hidden {
+
+    display: none;
+}
+
+@media screen and (max-width: 740px) {
+
+    .benefits__hidden {
+
+        display: block;
+    }
+}

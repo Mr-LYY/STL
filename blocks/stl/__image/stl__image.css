@@ -1,6 +1,30 @@
 .stl__image {
-
+    width: 42vw;
     position: absolute;
     top: 50px;
     left: 350px;
 }
+
+@media screen and (min-width: 1280px) {
+    .stl__image {
+
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .stl__image {
+
+        top: 40px;
+        left: 300px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .stl__image {
+
+        display: none;
+    }
+}
+

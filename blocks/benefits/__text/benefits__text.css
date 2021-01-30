@@ -5,3 +5,11 @@
     margin-left: auto;
     text-align: justify;
 }
+
+@media screen and (max-width: 425px) {
+
+    .benefits__text {
+
+        font-size: 16px;
+    }
+}

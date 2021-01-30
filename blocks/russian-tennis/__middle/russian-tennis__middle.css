@@ -5,3 +5,11 @@
     padding: 40px 0;
     text-align: justify;
 }
+
+@media screen and (max-width: 425px) {
+
+    .russian-tennis__middle {
+
+        font-size: 16px;
+    }
+}
