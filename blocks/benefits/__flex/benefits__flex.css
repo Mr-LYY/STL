@@ -1,0 +1,8 @@
+.benefits__flex {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: 0 auto;
+    gap: 40px;
+}

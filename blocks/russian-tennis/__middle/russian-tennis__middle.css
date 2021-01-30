@@ -1,8 +1,7 @@
 .russian-tennis__middle {
 
-    max-width: 49%;
-    font-size: 20px;
+    font-size: 22px;
     margin: 0 auto;
-    padding: 70px 0 0;
-    text-align: center;
+    padding: 40px 0;
+    text-align: justify;
 }
