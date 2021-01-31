@@ -6,3 +6,11 @@
     margin-top: 100px;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 768px) {
+
+    .sign__header {
+
+        margin-top: 20px;
+    }
+}
