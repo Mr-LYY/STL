@@ -1,0 +1,14 @@
+/*Sign*/
+
+@import url(../blocks/sign/sign.css);
+@import url(../blocks/sign/__form/sign__form.css);
+@import url(../blocks/sign/__header/sign__header.css);
+@import url(../blocks/sign/__header-in/sign__header-in.css);
+@import url(../blocks/sign/__header-up/sign__header-up.css);
+@import url(../blocks/sign/__header-in/_active/sign__header-in_active.css);
+@import url(../blocks/sign/__header-up/_active/sign__header-up_active.css);
+@import url(../blocks/sign/__form-reg/sign__form-reg.css);
+@import url(../blocks/sign/__form-reg/_active/sign__form-reg_active.css);
+@import url(../blocks/sign/__form/_active/sign__form_active.css);
+@import url(../blocks/sign/__input/sign__input.css);
+@import url(../blocks/sign/__btn/sign__btn.css);

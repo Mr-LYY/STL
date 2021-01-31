@@ -1,0 +1,16 @@
+.sign {
+
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    width: 400px;
+    min-height: 500px;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+}
+
+@media screen and (max-width: 590px) {
+
+    .sign {
+
+        width: 300px;
+    }
+}

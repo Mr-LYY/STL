@@ -1,0 +1,22 @@
+.sign__btn {
+
+    font-size: 18px;
+    border: none;
+    background: none;
+    padding: 10px;
+    background: linear-gradient(194deg, rgba(100,149,237,1) 0%, rgba(140,179,250,1) 100%);
+    border-radius: 10px;
+    margin: 10px 0;
+    color: white;
+}
+
+.sign__btn:hover {
+
+    background: linear-gradient(194deg, rgba(100,149,237,1) 100%, rgba(140,179,250,1) 0%);
+}
+
+.sign__btn:focus {
+
+    outline: none;
+    border: 1px solid orange;
+}

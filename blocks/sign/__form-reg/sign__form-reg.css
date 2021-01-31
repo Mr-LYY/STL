@@ -1,0 +1,8 @@
+.sign__form-reg {
+    
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 0 1px 0 grey;
+    border-radius: 10px;
+}

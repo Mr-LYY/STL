@@ -1,0 +1,8 @@
+.sign__header {
+
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
