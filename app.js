@@ -9,9 +9,18 @@ let groupAvarageTime = document.querySelector('#group-avarage-time');
 let playoffAvarageTime = document.querySelector('#playoff-avarage-time');
 let addAvarageTime = document.querySelector('#add-avarage-time');
 
+let resultShow = document.querySelector('.calc__result');
+
 
 //Result Blocks
+
 let totalAllStagesMachesQty
+let totalAllStagesMachesTime
+let totalAllStagesMachesTimeForCourt
+
+let resultTotalAllStagesTime = document.querySelector('#resultTotalAllStagesTime');
+let resultTotalAllStagesTimeForCourt = document.querySelector('#resultTotalAllStagesTimeForCourt');
+
 let resultTotalGroupMatches = document.querySelector('#resultTotalGroupMatches');
 let resultTotalPlayoffMatches = document.querySelector('#resultTotalPlayoffMatches');
 let resultTotalAddMatches = document.querySelector('#resultTotalAddMatches');
@@ -26,6 +35,12 @@ let resultTotalPlayoffAllTime = document.querySelector('#resultTotalPlayoffAllTi
 let resultTotalPlayoffAllTimeHours = document.querySelector('#resultTotalPlayoffAllTimeHours');
 let resultTotalPlayoffTimeForCourt = document.querySelector('#resultTotalPlayoffTimeForCourt');
 let resultTotalPlayoffTimeForCourtHours = document.querySelector('#resultTotalPlayoffTimeForCourtHours');
+
+let resultTotalAdditionalTourTime = document.querySelector('#resultTotalAdditionalTourTime');
+let resultTotalAdditionalTourHours = document.querySelector('#resultTotalAdditionalTourHours');
+let resultTotalAdditionalTourForCourt = document.querySelector('#resultTotalAdditionalTourForCourt');
+let resultTotalAddTourForCourtTimeHours = document.querySelector('#resultTotalAddTourForCourtTimeHours');
+
 
 //Group Round
 
@@ -75,9 +90,16 @@ let remainingAddMinutesForCourt
 
 let calcBtn = document.querySelector('.calc__btn')
 let calcForm = document.querySelector('.calc__form');
+let reset = document.querySelector('#reset');
+
+
+
 
 function matchesCalc() {
 
+    
+    resultShow.classList.add('calc__result_active');
+    
     //Групповой этап
 
     grpKidsQty = parseInt(totalKidsQty.value / totalGroupQty.value)
@@ -204,9 +226,9 @@ function matchesCalc() {
     totalAllStagesMachesQty = totalMatchesAllGroups + totalMatchesPlayoff + totalMatchesAddTournament
 
     resultTotalGroupMatches.insertAdjacentHTML('afterbegin', totalMatchesAllGroups + ' шт.');
-    resultTotalPlayoffMatches.insertAdjacentHTML('afterbegin', totalMatchesPlayoff);
-    resultTotalAddMatches.insertAdjacentHTML('afterbegin', totalMatchesAddTournament);
-    resultTotalAllStagesMatches.insertAdjacentHTML('afterbegin', totalAllStagesMachesQty);
+    resultTotalPlayoffMatches.insertAdjacentHTML('afterbegin', totalMatchesPlayoff + ' шт.');
+    resultTotalAddMatches.insertAdjacentHTML('afterbegin', totalMatchesAddTournament + ' шт.');
+    resultTotalAllStagesMatches.insertAdjacentHTML('afterbegin', totalAllStagesMachesQty + ' шт.');
 
     //Time results
     //console.log(totalGroupTimeHours)
@@ -225,11 +247,28 @@ function matchesCalc() {
     resultTotalPlayoffTimeForCourtHours.insertAdjacentHTML('afterbegin', playoffTimeForCourtHours + ' ч. ');
     resultTotalPlayoffTimeForCourtHours.insertAdjacentHTML('beforeend', remainingPlayoffMinutesForCourt + ' мин.');
 
-    
+    resultTotalAdditionalTourTime.insertAdjacentHTML('afterbegin', totalAddTime + ' мин.');
+    resultTotalAdditionalTourHours.insertAdjacentHTML('afterbegin', totalAddTimeHours + ' ч. ');
+    resultTotalAdditionalTourHours.insertAdjacentHTML('beforeend', remainingAddMinutes + ' мин.');
+    resultTotalAdditionalTourForCourt.insertAdjacentHTML('afterbegin', addTimeForCourt + ' мин.');
+    resultTotalAddTourForCourtTimeHours.insertAdjacentHTML('afterbegin', addTimeForCourtHours + ' ч. ');
+    resultTotalAddTourForCourtTimeHours.insertAdjacentHTML('beforeend', remainingAddMinutesForCourt + ' мин.');
+
+
+    totalAllStagesMachesTime = totalGroupTime + totalPlayoffTime + totalAddTime;
+    resultTotalAllStagesTime.insertAdjacentHTML('afterbegin', totalAllStagesMachesTime + ' мин.');
+
+    totalAllStagesMachesTimeForCourt = groupTimeForCourt + playoffTimeForCourt + addTimeForCourt;
+    resultTotalAllStagesTimeForCourt.insertAdjacentHTML('afterbegin', totalAllStagesMachesTimeForCourt + ' мин.')
+
+}
+
+function resetFun() {
+
+    window.location = window.location.href
 }
 
 
 
-
-
 calcBtn.addEventListener('click', matchesCalc);
+reset.addEventListener('click', resetFun);
