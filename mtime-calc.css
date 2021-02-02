@@ -44,6 +44,11 @@
     border: 1px solid orange;
 }
 
+.calc__btn_hide {
+
+    display: none;
+}
+
 /*Calc Rsults*/
 
 .calc__result {

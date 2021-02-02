@@ -17,9 +17,12 @@ let resultShow = document.querySelector('.calc__result');
 let totalAllStagesMachesQty
 let totalAllStagesMachesTime
 let totalAllStagesMachesTimeForCourt
+let AllStagesForCourtHours
+let AllStagesForCourtMinutes
 
 let resultTotalAllStagesTime = document.querySelector('#resultTotalAllStagesTime');
 let resultTotalAllStagesTimeForCourt = document.querySelector('#resultTotalAllStagesTimeForCourt');
+let resultTotalAllStagesTimeForCourtHours = document.querySelector('#resultTotalAllStagesTimeForCourtHours');
 
 let resultTotalGroupMatches = document.querySelector('#resultTotalGroupMatches');
 let resultTotalPlayoffMatches = document.querySelector('#resultTotalPlayoffMatches');
@@ -99,7 +102,9 @@ function matchesCalc() {
 
     
     resultShow.classList.add('calc__result_active');
+    calcBtn.classList.add('calc__btn_hide');
     
+
     //Групповой этап
 
     grpKidsQty = parseInt(totalKidsQty.value / totalGroupQty.value)
@@ -259,7 +264,13 @@ function matchesCalc() {
     resultTotalAllStagesTime.insertAdjacentHTML('afterbegin', totalAllStagesMachesTime + ' мин.');
 
     totalAllStagesMachesTimeForCourt = groupTimeForCourt + playoffTimeForCourt + addTimeForCourt;
-    resultTotalAllStagesTimeForCourt.insertAdjacentHTML('afterbegin', totalAllStagesMachesTimeForCourt + ' мин.')
+    resultTotalAllStagesTimeForCourt.insertAdjacentHTML('afterbegin', totalAllStagesMachesTimeForCourt + ' мин.');
+
+    AllStagesForCourtHours = parseInt(totalAllStagesMachesTimeForCourt / 60);
+    resultTotalAllStagesTimeForCourtHours.insertAdjacentHTML('afterbegin', AllStagesForCourtHours + ' ч. ');
+    AllStagesForCourtMinutes = parseInt(totalAllStagesMachesTimeForCourt % 60);
+    resultTotalAllStagesTimeForCourtHours.insertAdjacentHTML('beforeend', AllStagesForCourtMinutes + ' мин.');
+
 
 }
 
