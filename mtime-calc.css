@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     width: 400px;
-    margin: 20px auto;/*
+    margin: 20px auto 0 auto;/*
     box-shadow: 0 0 1px 0 grey;*/
     padding: 20px;
     border-radius: 10px;
@@ -56,7 +56,7 @@
     font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
     display: none;
     width: 400px;
-    margin: 20px auto;/*
+    margin: 0 auto 20px auto;/*
     box-shadow: 0 0 1px 0 grey;*/
     padding: 20px;
     border-radius: 10px;
