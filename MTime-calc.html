@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./mtime-calc.css">
+    <title>Match&Time</title>
+</head>
+<body>
+
+    <!--Основная секция-->
+    <main>
+        <div class="calc__form">
+            <h1 class="calc__result-title">Заполните форму</h1>
+            <label for="kids-qty">Сколько всего участников турнира</label>
+            <input type="number" id="kids-qty" class="kids-qty__input" placeholder="Введите количество детей" required>
+
+            <label for="group-qty">Сколько групп вы хотите сделать?</label>
+            <input type="number" id="group-qty" class="kids-qty__input" placeholder="Введите количество групп" required>
+
+            <label for="kids-exit">Сколько детей выходит из группы?</label>
+            <input type="number" id="kids-exit" class="kids-qty__input" placeholder="Введите количество детей" required>
+
+            <label for="courts-qty">Какое у вас количество кортов?</label>
+            <input type="number" id="courts-qty" class="kids-qty__input" placeholder="Укажите кол-во кортов" required>
+
+            <label for="group-avarage-time">Какое среднее время матча в группе?</label>
+            <input type="number" id="group-avarage-time" class="kids-qty__input" placeholder="Укажите время в минутах" required>
+
+            <label for="playoff-avarage-time">Какое среднее время матча в Play-off?</label>
+            <input type="number" id="playoff-avarage-time" class="kids-qty__input" placeholder="Укажите время в минутах" required>
+
+            <label for="add-avarage-time">Какое среднее время матча в Доп.турнире?</label>
+            <input type="number" id="add-avarage-time" class="kids-qty__input" placeholder="Укажите время в минутах" required>
+            
+            <button type="submit" class="calc__btn">Посчитать</button>
+        </div>
+
+        <!--Result Block-->
+
+        <div class="calc__result">
+            <h1 class="calc__result-title">Рассчёт турнира</h1>
+
+            <div class="calc__result-category">
+                <h2 class="calc__result-category-title">Групповой Этап</h2>
+
+                <div class="calc__result-item">
+                    <p class="calc__result-name">Общее кол-во матчей Группового Этапа</p>
+                    <div id="resultTotalGroupMatches" class="calc__result-answer"></div>
+
+                    <p class="calc__result-name">Время всех матчей Группового Этапа</p>
+                    <div id="resultTotalGroupAllTime" class="calc__result-answer"></div>
+
+                    <p class="calc__result-name">Или по другому:</p>
+                    <div id="resultTotalGroupAllMatchesHours" class="calc__result-answer"></div>
+
+                    <p class="calc__result-name">Время матчей Группового Этапа на каждом корте</p>
+                    <div id="resultTotalGroupTimeForCourt" class="calc__result-answer"></div>
+
+                    <p class="calc__result-name">Или по другому</p>
+                    <div id="resultTotalGroupTimeForCourtHours" class="calc__result-answer"></div>
+                </div>
+            </div>
+            <div class="calc__result-category">
+                <h2 class="calc__result-category-title">Этап PlayOff</h2>
+
+                <div class="calc__result-item">
+                    <p class="calc__result-name">Общее кол-во матчей Этапа PlayOff</p>
+                    <div id="resultTotalPlayoffMatches" class="calc__result-answer"></div>
+                    
+                    <p class="calc__result-name">Время всех матчей Этапа PlayOff</p>
+                    <div id="resultTotalPlayoffAllTime" class="calc__result-answer"></div>
+
+                    <p class="calc__result-name">Или по другому:</p>
+                    <div id="resultTotalPlayoffAllTimeHours" class="calc__result-answer"></div>
+
+                    <p class="calc__result-name">Время матчей Этапа PlayOff на каждом корте</p>
+                    <div id="resultTotalPlayoffTimeForCourt" class="calc__result-answer"></div>
+
+                    <p class="calc__result-name">Или по другому</p>
+                    <div id="resultTotalPlayoffTimeForCourtHours" class="calc__result-answer"></div>
+                </div>
+            </div>
+            <div class="calc__result-category">
+                <h2 class="calc__result-category-title">Этап Доп.турнира</h2>
+
+                <div class="calc__result-item">
+                    <p class="calc__result-name">Общее кол-во матчей Доп.турнира</p>
+                    <div id="resultTotalAddMatches" class="calc__result-answer"></div>
+
+                    <p class="calc__result-name">Время всех матчей Доп.турнира</p>
+                    <div id="resultTotalGroupAllTime" class="calc__result-answer"></div>
+
+                    <p class="calc__result-name">Или по другому:</p>
+                    <div id="resultTotalGroupAllMatchesHours" class="calc__result-answer"></div>
+
+                    <p class="calc__result-name">Время матчей Доп.турнира на каждом корте</p>
+                    <div id="resultTotalPlayoffTimeForCourt" class="calc__result-answer"></div>
+
+                    <p class="calc__result-name">Или по другому</p>
+                    <div id="resultTotalGroupTimeForCourtHours" class="calc__result-answer"></div>
+                </div>
+            </div>
+            <div class="calc__result-category">
+                <h2 class="calc__result-category-title">Общие данные всего турнира</h2>
+
+                <div class="calc__result-item">
+                    <p class="calc__result-name">Общее кол-во матчей турнира</p>
+                    <div id="resultTotalAllStagesMatches" class="calc__result-answer"></div>
+
+                    <p class="calc__result-name">Общее время матчей турнира</p>
+                    <div id="resultTotalAllStagesMatches" class="calc__result-answer"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="./app.js"></script>
+</body>
+</html>

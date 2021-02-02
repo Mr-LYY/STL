@@ -1,0 +1,83 @@
+@import url(./fonts/century/century_gothic.css);
+
+.calc__form {
+
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 20px auto;/*
+    box-shadow: 0 0 1px 0 grey;*/
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.kids-qty__input {
+
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid cornflowerblue;
+    border-radius: 10px;
+}
+
+.calc__btn {
+
+    font-size: 18px;
+    border: none;
+    background: none;
+    padding: 10px;
+    background: linear-gradient(194deg, rgba(100,149,237,1) 0%, rgba(140,179,250,1) 100%);
+    border-radius: 10px;
+    margin: 10px 0;
+    color: white;
+}
+
+.calc__btn:hover {
+
+    background: linear-gradient(194deg, rgba(100,149,237,1) 100%, rgba(140,179,250,1) 0%);
+}
+
+.calc__btn:focus {
+
+    outline: none;
+    border: 1px solid orange;
+}
+
+/*Calc Rsults*/
+
+.calc__result {
+
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 50px auto;/*
+    box-shadow: 0 0 1px 0 grey;*/
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calc__result-title {
+
+    color: cornflowerblue;
+}
+
+.calc__result-category {
+
+    box-shadow: 0 0 1px 0 grey;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.calc__result-category-title {
+
+    color: orange;
+}
+
+.calc__result-answer {
+
+    font-weight: 900;
+    font-size: 22px;
+}
