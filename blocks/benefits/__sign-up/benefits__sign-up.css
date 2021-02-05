@@ -10,6 +10,22 @@
 
     .benefits__sign-up {
 
-        width: 70%;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .benefits__sign-up {
+
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .benefits__sign-up {
+
+        width: 250px;
     }
 }
