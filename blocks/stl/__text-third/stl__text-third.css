@@ -3,7 +3,7 @@
     font-size: 22px;
     margin: 0;
     padding: 40px 160px 0 160px;
-    text-align: justify;
+    text-align: left;
 }
 
 @media screen and (max-width: 900px) {

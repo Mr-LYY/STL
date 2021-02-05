@@ -1,0 +1,51 @@
+/*vendor*/
+
+@import url(../blocks/vendor/normalize.css);
+
+
+/*animation*/
+
+@import url(../blocks/animation/animation.css);
+
+
+/*fonts*/
+
+@import url(../fonts/century/century_gothic.css);
+
+
+/*background*/
+
+@import url(../blocks/background/background.css);
+
+
+/*root*/
+
+@import url(../blocks/root/root.css);
+
+
+/*header*/
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo-case/header__logo-case.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__logo-link/header__logo-link.css);
+@import url(../blocks/header/__online-score/header__online-score.css);
+@import url(../blocks/header/__score-text/header__score-text.css);
+@import url(../blocks/header/__score-subtext/header__score-subtext.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__low/header__low.css);
+@import url(../blocks/header/__menu/header__menu.css);
+@import url(../blocks/header/__menu-item/header__menu-item.css);
+@import url(../blocks/header/__sub-menu/header__sub-menu.css);
+@import url(../blocks/header/__sub-link/header__sub-link.css);
+@import url(../blocks/header/__enter/header__enter.css);
+@import url(../blocks/header/__enter-item/header__enter-item.css);
+@import url(../blocks/header/__enter-icon/header__enter-icon.css);
+@import url(../blocks/header/__menu-arrow/header__menu-arrow.css);
+@import url(../blocks/header/__links/header__links.css);
+@import url(../blocks/header/__sub-links/header__sub-links.css);
+@import url(../blocks/header/__mobile/header__mobile.css);
+@import url(../blocks/header/__menu-btn/header__menu-btn.css);
+@import url(../blocks/header/__mobile-sub/header__mobile-sub.css);
+@import url(../blocks/header/__mobile-sub/_type_opened/header__mobile-sub_type_opened.css);
+@import url(../blocks/header/__mobile-sub/_type_close/header__mobile-sub_type_close.css);
