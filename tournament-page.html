@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школьная Теннисная Лига</title>
+    <link rel="stylesheet" type="text/css" href="./pages/main.css">
+    <link rel="stylesheet" type="text/css" href="./pages/tournament-page.css">
+    <script src="./scripts/app.js" defer></script>
+</head>
+<body>
+    <div class="background">
+        <div class="root">
+            <header class="header">
+                <a class="header__logo-link" href="./main.html"><div class="header__logo-case">
+                    <div class="header__logo"></div>
+                    <h1 class="header__title">Школьная Теннисная Лига</h1>
+                </div></a>
+                <a class="header__online-score" href="#">
+                    <div>
+                        <p class="header__score-text">Онлайн счет</p>
+                        <p class="header__score-subtext">текущих матчей</p>
+                    </div>
+                    <img src="./images/online-score.svg">
+                </a>
+            </header>
+
+            <!-- Main__header -->
+
+            <nav class="header__low">
+                <div class="header__menu">
+                    <li class="header__menu-item"><a class="header__links" href="./calendar.html">Турниры</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="./raiting.html">Рейтинг</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="https://schooltennisliga.printdirect.ru/">Магазин</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="./about.html">О Лиге<svg class="header__menu-arrow" viewBox="0 0 5 9">
+                        <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                    </svg></a>
+                        <ul class="header__sub-menu">
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="./about.html">О Лиге</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="./clubs.html">Клубы</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="./documents.html">Документы</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="./contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <a href="./sign-in.html" class="header__enter">
+                    <p class="header__enter-item">Ваш кабинет</p>
+                    <div class="header__enter-icon"></div>
+                </a>
+            </nav>
+
+
+            <!-- Moble__header -->
+
+            <nav class="header__mobile">
+                <div id="header__menu-btn">
+                    <span class="icon"></span>
+                    <span class="text">меню</span>
+                </div>
+                <div class="header__mobile-sub header__mobile-sub_type_close">
+                    <div class="header__menu">
+                    <li class="header__menu-item"><a class="header__links" href="./calendar.html">Турниры</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="./raiting.html">Рейтинг</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="https://schooltennisliga.printdirect.ru/">Магазин</a></li>
+                    <li class="header__menu-item"><a class="header__links" href="./about.html">О Лиге<svg class="header__menu-arrow" viewBox="0 0 5 9">
+                        <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                    </svg></a>
+                        <ul class="header__sub-menu">
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="./about.html">О Лиге</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="./clubs.html">Клубы</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="./documents.html">Документы</a>
+                            </li>
+                            <li class="header__sub-link">
+                                <a class="header__sub-links" href="./contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                </div>
+                <div class="header__enter">
+                    <p class="header__enter-item">Ваш кабинет</p>
+                    <div class="header__enter-icon"></div>
+                </div>
+            </nav>
+    
+            <main>
+                <section class="info">
+                    <h1 class="info__title">Турнир "Зеленый мяч" - 10.10.2021</h1>
+                    <div class="info__flex">
+                        <div class="info__big-case">
+                            <div class="info__case">
+                                <h2 class="info__heading">Город</h2>
+                                <p class="info__text">Москва</p>
+                            </div>
+                            <div class="info__case">
+                                <h2 class="info__heading">Время</h2>
+                                <p class="info__text">14:00 - 16:00</p>
+                            </div>
+                            <div class="info__case">
+                                <h2 class="info__heading">Место проведения</h2>
+                                <p class="info__text">Теннисный клуб "TENNIS.RU"</p>
+                            </div>
+                            <div class="info__case">
+                                <h2 class="info__heading">Телефон Главного судьи</h2>
+                                <p class="info__text">+7 925 713-84-34</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tab">
+                    <h3 class="tab__button tab__button_active" data-tab="tDetails">Детали турнира</h3>
+                    <h3 class="tab__button" data-tab="playersList">Список участников</h3>
+                    <h3 class="tab__button" data-tab="groups">Групповой этап</h3>
+                    <h3 class="tab__button" data-tab="playoff">Этап Play-off</h3>
+                    <h3 class="tab__button" data-tab="addTour">Доп.турнир</h3>
+                </section>
+
+                <section class="tab-content tab-content_active" data-tab-content="tDetails">
+                    <div class="info">
+                        <div class="info__case">
+                            <h2 class="info__heading">Адрес</h2>
+                            <p class="info__text">Ул. Летовская д.8 строение 108</p>
+                        </div>
+                        <div class="info__case">
+                            <h2 class="info__heading">Главный судья</h2>
+                            <p class="info__text">Кот Евгения Александровна</p>
+                        </div>
+                        <div class="info__case">
+                            <h2 class="info__heading">Формат турнира</h2>
+                            <p class="info__text">Групповой этап + Play-off</p>
+                        </div>
+                        <div class="info__case">
+                            <h2 class="info__heading">Формат матчей</h2>
+                            <p class="info__text">Тайбрейк до 10 очков, решающее очко при счете 9:9</p>
+                        </div>
+                        <div class="info__case">
+                            <h2 class="info__heading">Максимальное число участников</h2>
+                            <p class="info__text">24</p>
+                        </div>
+                        <div class="info__case">
+                            <h2 class="info__heading">Взнос</h2>
+                            <p class="info__text">2500р</p>
+                        </div>
+                        <div class="info__case-last">
+                            <h2 class="info__heading">Комментарий Главного судьи</h2>
+                            <p class="info__text">Регистрация на турнир открывается за 20 минут до начала турнира и заканчивается ко времени начала турнира. Игроки, опоздавшие на регистрацию без предупреждения Главного судьи снимаются с турнира без возвращения вступительного взноса</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tab-content" data-tab-content="playersList">
+                    <div class="players-list">
+                        <p class="players-list__heading">№</p>
+                        <p class="players-list__heading">Имя</p>
+                        <p class="players-list__heading">Возраст</p>
+                        <p class="players-list__heading">Очки в лиге</p>
+                        <p class="players-list__text">1.</p>
+                        <p class="players-list__text">Рафа Надаль</p>
+                        <p class="players-list__text">7 лет</p>
+                        <p class="players-list__text">1290</p>
+                        <p class="players-list__text">2.</p>
+                        <p class="players-list__text">Маша Шарапова</p>
+                        <p class="players-list__text">9 лет</p>
+                        <p class="players-list__text">690</p>
+                        <p class="players-list__text">3.</p>
+                        <p class="players-list__text">Новак Джокович</p>
+                        <p class="players-list__text">8 лет</p>
+                        <p class="players-list__text">490</p>
+                        <p class="players-list__text">4.</p>
+                        <p class="players-list__text">Даня Медведев</p>
+                        <p class="players-list__text">7 лет</p>
+                        <p class="players-list__text">290</p>
+                        <p class="players-list__text">5.</p>
+                        <p class="players-list__text">Серена Вильямс</p>
+                        <p class="players-list__text">9 лет</p>
+                        <p class="players-list__text">129</p>
+                    </div>
+                </section>
+
+                <section class="tab-content" data-tab-content="groups">
+                    <div class="group-stage">
+                        <div class="group-stage__table-top">
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                        </div>
+                        <div class="group-stage__table-row">
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                        </div>
+                        <div class="group-stage__table-row">
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                        </div>
+                        <div class="group-stage__table-row">
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                        </div>
+                        <div class="group-stage__table-row">
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                            <div class="group-stage__cell"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tab-content" data-tab-content="playoff">
+                    <div class="playoff">
+                        <div class="playoff__sixteen">
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Серена Вильямс</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Игорь Зоркин</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Кантемир Алехин</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Ваня Сарайский</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Никита Кузнецов</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Филипп Киркоров</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Даниил Медведев</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Жа Бао Чи</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Чик Чирик</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Николай Марцулевич</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Дмитрий Люлекин</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Новак Джокович</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Алевтина Никитина</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Семён Семеныч</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Катя Макарова</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Андрей Рублев</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="playoff__eight">
+                            <div class="playoff__cell-case playoff__cell-case_eight">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Игорь Зоркин</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Кантемир Алехин</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case playoff__cell-case_eight">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Никита Кузнецов</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Даниил Медведев</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case playoff__cell-case_eight">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Николай Марцулевич</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Дмитрий Люлекин</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case playoff__cell-case_eight">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Алевтина Никитина</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Андрей Рублев</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="playoff__four">
+                            <div class="playoff__cell-case playoff__cell-case_eight">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Игорь Зоркин</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Даниил Медведев</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case playoff__cell-case_eight">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Дмитрий Люлекин</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Андрей Рублев</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="playoff__two">
+                            <div class="playoff__cell-case playoff__cell-case_eight">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Игорь Зоркин</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Дмитрий Люлекин</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="tab-content" data-tab-content="addTour">
+                    <div class="playoff">
+                        <div class="playoff__sixteen">
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Серена Вильямс</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Игорь Зоркин</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Кантемир Алехин</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Ваня Сарайский</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Никита Кузнецов</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Филипп Киркоров</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Даниил Медведев</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Жа Бао Чи</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Чик Чирик</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Николай Марцулевич</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Дмитрий Люлекин</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Новак Джокович</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Алевтина Никитина</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Семён Семеныч</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Катя Макарова</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Андрей Рублев</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="playoff__eight">
+                            <div class="playoff__cell-case playoff__cell-case_eight">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Игорь Зоркин</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Кантемир Алехин</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case playoff__cell-case_eight">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Никита Кузнецов</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Даниил Медведев</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case playoff__cell-case_eight">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Николай Марцулевич</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Дмитрий Люлекин</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case playoff__cell-case_eight">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Алевтина Никитина</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Андрей Рублев</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="playoff__four">
+                            <div class="playoff__cell-case playoff__cell-case_eight">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Игорь Зоркин</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Даниил Медведев</p>
+                                </div>
+                            </div>
+                            <div class="playoff__cell-case playoff__cell-case_eight">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Дмитрий Люлекин</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Андрей Рублев</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="playoff__two">
+                            <div class="playoff__cell-case playoff__cell-case_eight">
+                                <div class="playoff__divider"></div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Игорь Зоркин</p>
+                                </div>
+                                <div class="playoff__cell">
+                                    <p class="playoff__player">Дмитрий Люлекин</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <footer class="footer">
+                <ul class="footer__contact">
+                    <li class="footer__post">
+                        <a class="footer_links" href="mailto:info@s-tennisliga.ru" target="_blank">
+                            <img src="./images/footer/post.svg" class="footer__icon-post">
+                            <p class="footer__post-text">info@s-tennisliga.ru</p>
+                        </a>
+                    </li>
+                    <li class="footer__phone">
+                        <a class="footer_links" href="tel:+7 965 109 61 55" target="_blank">
+                            <img src="./images/footer/phone.svg" class="footer__icon-phone">
+                            <p class="footer__phone-text">+7 965 109 61 55</p>
+                        </a>
+                    </li>
+                    <li class="footer__insta">
+                        <a class="footer_links" href="https://www.instagram.com/school_tennis_liga" target="_blank">
+                            <img src="./images/footer/insta.svg" class="footer__icon-insta">
+                            <p class="footer__insta-text">school_tennis_liga</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__low">
+                    <a href="./main.html" target="_blank" class="footer__rights">&copy; 2020 Школьная Теннисная Лига</a>
+                    <a href="#" target="_blank" class="footer__politics">Политика конфиденциальности</a>
+                </div>
+            </footer>
+            
+        </div>
+    </div>
+<script src="./scripts/mobile_menu.js"></script>
+</body>
+</html>

@@ -1,8 +1,11 @@
 .russian-tennis {
 
     font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
-    padding: 100px 160px;
+    padding: 50px 160px;
     margin: 0;
+    background-color: white;
+    border-radius: 15px;
+    margin: 30px 0;
 }
 
 

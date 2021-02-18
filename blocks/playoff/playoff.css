@@ -1,0 +1,8 @@
+.playoff {
+
+    display: flex;
+    flex-direction: row;
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    position: relative;
+    padding: 50px 100px;
+}

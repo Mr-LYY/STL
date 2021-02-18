@@ -1,0 +1,7 @@
+.players-list__title_active {
+
+    color: cornflowerblue;
+    border-bottom: 1px solid cornflowerblue;
+    padding-bottom: 10px;
+    margin-bottom: 19px;
+}

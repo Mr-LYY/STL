@@ -10,7 +10,8 @@ let playoffAvarageTime = document.querySelector('#playoff-avarage-time');
 let addAvarageTime = document.querySelector('#add-avarage-time');
 
 let resultShow = document.querySelector('.calc__result');
-
+const xPlayersqty = document.querySelector('#X-players-qty');
+const xQty = document.querySelector('#X-qty')
 
 //Result Blocks
 
@@ -44,6 +45,8 @@ let resultTotalAdditionalTourHours = document.querySelector('#resultTotalAdditio
 let resultTotalAdditionalTourForCourt = document.querySelector('#resultTotalAdditionalTourForCourt');
 let resultTotalAddTourForCourtTimeHours = document.querySelector('#resultTotalAddTourForCourtTimeHours');
 
+const randResult = document.querySelector('.randomizer__result');
+const randResultText = document.querySelector('.randomizer__result_text');
 
 //Group Round
 
@@ -94,8 +97,47 @@ let remainingAddMinutesForCourt
 let calcBtn = document.querySelector('.calc__btn')
 let calcForm = document.querySelector('.calc__form');
 let reset = document.querySelector('#reset');
+const randBtn = document.querySelector('.randomizer__btn')
 
 
+//randomizer
+
+function random(min,max,l) {
+    randResult.classList.add('randomizer__result_active')
+
+    let arr = [],m = [],n = 0;
+    if (max - min < l-1) return;
+    for (var i=0; i<=(max-min); i++)m[i] = i + min;
+    for (var i=0; i<l; i++) {n = Math.floor(Math.random()*(m.length)); arr[i]=m.splice(n,1);};
+    return arr
+}
+
+
+
+
+//Tabs
+const tabNavs = document.querySelectorAll('.tab__button');
+const tabPanes = document.querySelectorAll('.tab-content');
+
+for (let i = 0; i < tabNavs.length; i++) {
+
+  tabNavs[i].addEventListener("click", function(evt){
+    evt.preventDefault();
+    const activeTabAttr = evt.target.getAttribute("data-tab");
+
+    for (let j = 0; j < tabNavs.length; j++) {
+      const contentAttr = tabPanes[j].getAttribute("data-tab-content");
+
+      if (activeTabAttr === contentAttr) {
+        tabNavs[j].classList.add("tab__button_active");
+        tabPanes[j].classList.add("tab-content_active"); 
+      } else {
+        tabNavs[j].classList.remove("tab__button_active");
+        tabPanes[j].classList.remove("tab-content_active");
+      }
+    };
+  });
+}
 
 
 function matchesCalc() {
@@ -276,10 +318,26 @@ function matchesCalc() {
 
 function resetFun() {
 
-    window.location = window.location.href
+    location.reload()
 }
 
 
 
+
+randBtn.addEventListener('click', () => {
+
+    randBtn.classList.add('randomizer__btn_hide')
+
+    if (xPlayersqty.value < xQty.value) {
+        randResult.classList.add('randomizer__result_active')
+        randResultText.textContent = `Ну как же так?) Игроков меньше, чем Х, не дело)`
+    } else {
+        
+    let arr = random(1,xPlayersqty.value,xQty.value);
+    randResultText.textContent = `Х присваивается следующим игрокам: ${arr}`
+    }
+})
 calcBtn.addEventListener('click', matchesCalc);
 reset.addEventListener('click', resetFun);
+
+document.querySelector('#randReset').addEventListener('click', resetFun);

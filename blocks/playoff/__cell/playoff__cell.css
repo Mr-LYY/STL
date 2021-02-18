@@ -1,0 +1,17 @@
+.playoff__cell {
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    max-width: 200px;
+    min-width: 200px;
+    background-color: #bfffff;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    z-index: 1;
+}

@@ -1,6 +1,7 @@
 .founders__text-lyulekin {
 
     font-size: 22px;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 425px) {

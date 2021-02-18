@@ -1,5 +1,7 @@
 .benefits__right {
 
-    padding-top: 29px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 50px;
     text-align: right;
 }

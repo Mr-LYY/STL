@@ -1,0 +1,8 @@
+.tab {
+    
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    position: relative;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-evenly;
+}

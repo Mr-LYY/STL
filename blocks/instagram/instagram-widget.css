@@ -3,4 +3,8 @@
     margin: 0 auto;
     padding: 0 50px;
     z-index: 0;
+    background-color: white;
+    border-radius: 15px;
+    padding: 50px;
+    margin-bottom: 30px;
 }

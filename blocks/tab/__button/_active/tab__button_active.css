@@ -1,0 +1,6 @@
+.tab__button_active {
+
+    color: cornflowerblue;
+    background-color: white;
+    box-shadow: inset 0px 0px 20px 3px rgb(205 205 205);
+}

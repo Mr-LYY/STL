@@ -1,0 +1,6 @@
+.info__case {
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}

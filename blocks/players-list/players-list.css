@@ -1,0 +1,9 @@
+.players-list {
+
+    position: relative;
+    display: grid;
+    grid-template-columns: min-content repeat(3, 1fr);
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    padding: 0 100px 100px 100px;
+    margin: 0;
+}

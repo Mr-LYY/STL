@@ -1,8 +1,9 @@
 .middle {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    padding: 100px 50px;
+    gap: 30px;
+    padding: 0;
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1024px) {

@@ -1,0 +1,69 @@
+/*info*/
+
+
+@import url(../blocks/info/info.css);
+@import url(../blocks/info/__title/info__title.css);
+@import url(../blocks/info/__heading/info__heading.css);
+@import url(../blocks/info/__text/info__text.css);
+@import url(../blocks/info/__case/info__case.css);
+@import url(../blocks/info/__big-case/info__big-case.css);
+@import url(../blocks/info/__case-last/info__case-last.css);
+
+
+/*tab*/
+
+@import url(../blocks/tab/tab.css);
+@import url(../blocks/tab/__button/tab__button.css);
+@import url(../blocks/tab/__button/_active/tab__button_active.css);
+@import url();
+@import url();
+@import url();
+@import url();
+
+
+/*tab-content*/
+
+@import url(../blocks/tab-content/tab-content.css);
+@import url(../blocks/tab-content/_active/tab-content_active.css);
+
+
+/*players-list*/
+
+@import url(../blocks/players-list/players-list.css);
+@import url(../blocks/players-list/__case-heading/players-list__case-heading.css);
+@import url(../blocks/players-list/__case/players-list__case.css);
+@import url(../blocks/players-list/__header/players-list__header.css);
+@import url(../blocks/players-list/__heading/players-list__heading.css);
+@import url(../blocks/players-list/__text/players-list__text.css);
+@import url(../blocks/players-list/__title/players-list__title.css);
+@import url(../blocks/players-list/__title/_active/players-list__title_active.css);
+@import url(../blocks/players-list/__case-heading/_opened/players-list__case-heading_opened.css);
+
+
+/*group-stage*/
+
+@import url(../blocks/group-stage/group-stage.css);
+@import url(../blocks/group-stage/__cell/group-stage__cell.css);
+@import url(../blocks/group-stage/__table-top/group-stage__table-top.css);
+@import url(../blocks/group-stage/__table-row/group-stage__table-row.css);
+
+
+/*playoff*/
+
+
+@import url(../blocks/playoff/playoff.css);
+@import url(../blocks/playoff/__cell-case/playoff__cell-case.css);
+@import url(../blocks/playoff/__cell/playoff__cell.css);
+@import url(../blocks/playoff/__player/playoff__player.css);
+@import url(../blocks/playoff/__divider/playoff__divider.css);
+@import url(../blocks/playoff/__eight/playoff__eight.css);
+@import url(../blocks/playoff/__cell-case/_eight/playoff__cell-case_eight.css);
+@import url(../blocks/playoff/__four/playoff__four.css);
+@import url(../blocks/playoff/__two/playoff__two.css);
+@import url();
+@import url();
+@import url();
+@import url();
+@import url();
+@import url();
+@import url();

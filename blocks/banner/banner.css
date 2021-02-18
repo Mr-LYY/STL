@@ -5,8 +5,10 @@
     justify-content: center;
     flex-direction: row;
     min-height: 29%;
-    padding-top: 50px;
     margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 30px auto;
 }
 
 @media screen and (max-width: 768px) {

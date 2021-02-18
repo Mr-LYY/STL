@@ -1,5 +1,56 @@
 @import url(./fonts/century/century_gothic.css);
 
+.tab {
+    
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 400px;
+    padding: 20px;
+}
+
+.tab__button {
+
+    font-weight: 900;
+    font-size: 22px;
+    padding: 20px 15px;
+    color: rgb(255, 255, 255);
+    background-color: cornflowerblue;
+    border-radius: 5px;
+}
+
+.tab__button_active {
+
+    color: cornflowerblue;
+    background-color: white;
+    box-shadow: inset 0px 0px 20px 3px rgb(205 205 205);
+}
+
+.tab-content {
+
+    display: none;
+}
+
+.tab-content_active {
+
+    display: block;
+}
+
+.randomizer__result {
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    display: none;
+    width: 400px;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+}
+
+.randomizer__result_active {
+    display: flex;
+    flex-direction: column;
+}
+
 .calc__form {
 
     font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
@@ -21,6 +72,37 @@
     border-radius: 10px;
 }
 
+/*Rand btn*/
+
+.randomizer__btn {
+
+    font-size: 18px;
+    border: none;
+    background: none;
+    padding: 10px;
+    background: linear-gradient(194deg, rgba(100,149,237,1) 0%, rgba(140,179,250,1) 100%);
+    border-radius: 10px;
+    margin: 10px 0;
+    color: white;
+}
+
+.randomizer__btn:hover {
+
+    background: linear-gradient(194deg, rgba(100,149,237,1) 100%, rgba(140,179,250,1) 0%);
+}
+
+.randomizer__btn:focus {
+
+    outline: none;
+    border: 1px solid orange;
+}
+
+.randomizer__btn_hide {
+
+    display: none;
+}
+
+/*calc btn*/
 .calc__btn {
 
     font-size: 18px;

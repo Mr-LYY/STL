@@ -2,4 +2,8 @@
 
     font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
     position: relative;
+    background-color: white;
+    border-radius: 15px;
+    padding: 50px;
+    margin: 30px 0;
 }

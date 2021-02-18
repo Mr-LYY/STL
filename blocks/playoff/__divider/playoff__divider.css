@@ -1,0 +1,10 @@
+.playoff__divider {
+
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    min-height: 70px;
+    min-width: 216px;
+    border: 2px solid orange;
+    border-radius: 5px;
+}

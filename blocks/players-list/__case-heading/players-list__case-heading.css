@@ -1,0 +1,5 @@
+.players-list__case-heading {
+
+    display: none;
+    grid-template-columns: min-content repeat(3, 1fr);
+}
