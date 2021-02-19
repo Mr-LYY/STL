@@ -1,0 +1,20 @@
+.first-stage__prevBtn {
+
+    font-size: 18px;
+    border: none;
+    background: none;
+    padding: 30px;
+    stroke: none;
+    text-align: left;
+}
+    
+.first-stage__prevBtn:hover {
+    color: teal;
+    cursor: pointer
+}
+
+.first-stage__prevBtnn:focus {
+
+    outline: none;
+    border: 1px solid orange;
+}

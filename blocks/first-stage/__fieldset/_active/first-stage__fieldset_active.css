@@ -1,0 +1,5 @@
+.first-stage__fieldset_active {
+
+    display: flex;
+    flex-direction: column;
+}

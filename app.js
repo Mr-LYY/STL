@@ -328,14 +328,9 @@ randBtn.addEventListener('click', () => {
 
     randBtn.classList.add('randomizer__btn_hide')
 
-    if (xPlayersqty.value < xQty.value) {
-        randResult.classList.add('randomizer__result_active')
-        randResultText.textContent = `Ну как же так?) Игроков меньше, чем Х, не дело)`
-    } else {
-        
     let arr = random(1,xPlayersqty.value,xQty.value);
     randResultText.textContent = `Х присваивается следующим игрокам: ${arr}`
-    }
+  
 })
 calcBtn.addEventListener('click', matchesCalc);
 reset.addEventListener('click', resetFun);

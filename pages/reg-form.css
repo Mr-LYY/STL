@@ -1,3 +1,17 @@
 @import url(../blocks/first-stage/first-stage.css);
 @import url(../blocks/first-stage/__form/first-stage__form.css);
 @import url(../blocks/first-stage/__profile-image/first-stage__profile-image.css);
+@import url(../blocks/first-stage/__fieldset/first-stage__fieldset.css);
+@import url(../blocks/first-stage/__fieldset/_active/first-stage__fieldset_active.css);
+@import url(../blocks/first-stage/__label/first-stage__label.css);
+@import url(../blocks/first-stage/__btn/first-stage__btn.css);
+@import url(../blocks/first-stage/__input/first-stage__input.css);
+@import url(../blocks/first-stage/__prevBtn/first-stage__prevBtn.css);
+@import url(../blocks/first-stage/__right/first-stage__right.css);
+@import url(../blocks/first-stage/__title/first-stage__title.css);
+@import url(../blocks/first-stage/__subtitle/first-stage__subtitle.css);
+@import url(../blocks/first-stage/__text/first-stage__text.css);
+@import url(../blocks/first-stage/__image/first-stage__image.css);
+@import url(../blocks/first-stage/__input/_error/form__input_type_error.css);
+@import url();
+@import url();

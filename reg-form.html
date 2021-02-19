@@ -6,6 +6,7 @@
     <title>Школьная Теннисная Лига</title>
     <link rel="stylesheet" type="text/css" href="./pages/main.css">
     <link rel="stylesheet" type="text/css" href="./pages/reg-form.css">
+    <script src="./scripts/reg-form.js" defer></script>
 </head>
 <body>
     <div class="background">
@@ -97,22 +98,85 @@
     
             <main>
                 <section class="first-stage">
-                    <img src="./images/talisman_hi-pose.svg">
-                    <div class="first-stage__left">
-                        <h2 class="first-stage__title">Спасибо, что решили зарегистрироваться в Школьной Теннисной Лиге!</h2>
-                        <p class="first-stage__subtitle">Приступим, это не займет много времени!</p>
-                        <form class="first-stage__form">
-                            <label for="name">Имя</label>
-                            <input type="text" id="first-stage__name" class="first-stage__name" placeholder="Иван" required>
-                            <label for="lastname">Фамилия</label>
-                            <input type="text" id="lastname" class="first-stage__lastname" placeholder="Иванов" required>
-                            <label for="patronymic">Отчество</label>
-                            <input type="text" id="patronymic" class="first-stage__patronymic" placeholder="Иванович" required>
-                            <label for="birthday">Дата Рождения</label>
-                            <input type="date" id="birthday" class="first-stage__birthday" placeholder="10.10.10" required>
-                            <label for="male"><input type="radio" name="sex-choice" class="first-stage__sex" value="male" id="male" required>Мужской</label>
-                            <label for="male"><input type="radio" name="sex-choice" class="first-stage__sex" value="female" id="female" required>Женский</label>
-                            <button class="first-stage__btn" type="submit">Следующий шаг</button>
+                    <img class="first-stage__image" src="./images/walk.png">
+                    <div class="first-stage__right">
+                        <h2 class="first-stage__title">Регистрация</h2>
+                        <p class="first-stage__subtitle"> в Школьной Теннисной Лиге!</p>
+                        <form class="first-stage__form" novalidate>
+                            <fieldset class="first-stage__fieldset first-stage__fieldset_active">
+                                <p class="first-stage__text">Этап 1/4 - Данные игрока</p>
+                                <label class="first-stage__label">
+                                    <input type="text" minlength="2" id="first-stage__name" class="first-stage__input" placeholder="Имя игрока" required>
+                                </label>
+                                <label class="first-stage__label">
+                                    <input type="text" id="lastname" class="first-stage__input" placeholder="Фамилия игрока" required>
+                                </label>
+                                
+                                <label class="first-stage__label">
+                                    <input type="text" id="patronymic" class="first-stage__input" placeholder="Отчество игрока" required>
+                                </label>
+                                
+                                <label class="first-stage__label">
+                                    <input type="date" id="birthday" class="first-stage__input" placeholder="Дата рождения игрока" required>
+                                </label>
+
+                                <label class="first-stage__label">
+                                    <input type="text" id="birthday" class="first-stage__input" placeholder="Город" required>
+                                </label>
+
+                                <label for="sex-choice" class="first-stage__label"></label>
+                              <div class="first-stage__sex-case">
+                                    <input type="radio" name="sex-choice" class="first-stage__input" value="male" id="male" required>
+                                    <span>Мужской</span>
+                                    <input type="radio" name="sex-choice" class="first-stage__input" value="female" id="female" required>
+                                    <span>Женский</span>
+                              </div>
+
+                                <button class="first-stage__btn" type="submit">Следующий шаг</button>
+                            </fieldset>
+
+                            <fieldset class="first-stage__fieldset">
+                                <p class="first-stage__text">Этап 2/4 - Данные представителя</p>
+                                <button class="first-stage__prevBtn">&larr;Назад</button>
+                                <label class="first-stage__label">
+                                    <input type="text" id="first-stage__name" class="first-stage__input" placeholder="ФИО представителя" required>
+                                </label>
+                                
+                                <label class="first-stage__label">
+                                    <input type="tel" id="birthday" class="first-stage__input" placeholder="Телефон представителя" required>
+                                </label>
+                                
+                                <button class="first-stage__btn" type="submit">Следующий шаг</button>
+                            </fieldset>
+
+                            <fieldset class="first-stage__fieldset">
+                                <p class="first-stage__text">Этап 3/4 - Информация о тренировках</p>
+                                <button class="first-stage__prevBtn">&larr;Назад</button>
+                                <label class="first-stage__label">
+                                    <input type="text" id="first-stage__name" class="first-stage__input" placeholder="ФИО тренера">
+                                </label>
+                                <label class="first-stage__label">
+                                    <input type="text" id="lastname" class="first-stage__input" placeholder="Место занятий">
+                                </label>
+                                
+                                <label class="first-stage__label">
+                                    <input type="number" id="patronymic" class="first-stage__input" placeholder="Год начала занятий теннисом">
+                                </label>
+                                
+                                <button class="first-stage__btn" type="submit">Следующий шаг</button>
+                            </fieldset>
+
+                            <fieldset class="first-stage__fieldset">
+                                <p class="first-stage__text">Этап 4/4 - Документы ШТЛ</p>
+                                <button class="first-stage__prevBtn">&larr;Назад</button>
+                                <label class="first-stage__label">
+                                    <input type="radio" name="sex-choice" class="first-stage__input" value="male" id="male" required>
+                                    <span>С документами ознакомлен и полностью согласен(-а)</span>
+                                </label>
+
+                                <button class="first-stage__btn" type="submit">Завершить регистрацию</button>
+                            </fieldset>
+
                         </form>
                     </div>
                     <!--<img class="first-stage__profile-image" src="./images/инст-аватар.jpg">-->

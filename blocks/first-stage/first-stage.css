@@ -1,7 +1,8 @@
 .first-stage {
 
+    position: relative;
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
     display: flex;
     flex-direction: row;
     margin: 0;
-    padding: 100px 70px;
 }

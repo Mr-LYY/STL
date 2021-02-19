@@ -1,0 +1,10 @@
+.first-stage__input {
+
+    
+    background-color: transparent;
+    padding: 15px 10px;
+    margin: 20px 0 40px;
+    border: none;
+    border-bottom: 2px solid cornflowerblue;
+    stroke: none;
+}

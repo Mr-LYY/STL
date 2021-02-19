@@ -1,0 +1,5 @@
+.first-stage__label {
+
+    display: flex;
+    flex-direction: column;
+}
