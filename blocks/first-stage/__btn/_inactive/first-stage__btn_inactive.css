@@ -1,0 +1,25 @@
+.first-stage__btn_inactive {
+
+    font-size: 18px;
+    border: none;
+    background: none;
+    padding: 10px;
+    background: linear-gradient(194deg, rgb(138, 141, 146) 0%, rgb(127, 135, 151) 100%);
+    border-radius: 10px;
+    margin: 10px 0;
+    color: white;
+    opacity: 20%;
+}
+
+.first-stage__btn_inactive:hover {
+
+    cursor: initial;
+    background: linear-gradient(194deg, rgb(138, 141, 146) 0%, rgb(127, 135, 151) 100%);
+}
+
+.first-stage__btn_inactive:focus {
+
+    outline: none;
+    border: 1px solid orange;
+}
+

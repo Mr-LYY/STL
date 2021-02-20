@@ -1,0 +1,14 @@
+.first-stage__commit {
+
+    padding: 10px 10px 0;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .first-stage__docs-case {
+
+        flex-direction: column;
+        align-items: center;
+    }
+}

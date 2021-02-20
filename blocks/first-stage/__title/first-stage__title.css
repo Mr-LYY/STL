@@ -1,9 +1,9 @@
 .first-stage__title {
 
-
     padding: 50px 0 10px;
-    text-align: center;
+    text-align: right;
     color: cornflowerblue;
-    font-size: 30px;
+    font-size: 38px;
     margin: 0;
+    max-width: 90%;
 }

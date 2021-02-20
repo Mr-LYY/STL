@@ -3,5 +3,22 @@
     display: flex;
     flex-direction: column;
     padding: 20px 70px;
-    height: 780px;
+    min-height: 660px;
+    max-width: 650px;
+    margin: 0 0 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .first-stage__form {
+
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .first-stage__form {
+        padding: 20px;
+    }
 }

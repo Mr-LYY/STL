@@ -1,7 +1,14 @@
 .first-stage__image {
 
-    width: 650px;
-    top: 30px;
+    width: 400px;
+    top: 120px;
+    left: 70px;
     position: absolute;
-    z-index: 0;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .first-stage__image {
+        display: none;
+    }
 }

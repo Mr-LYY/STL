@@ -3,8 +3,16 @@
     
     background-color: transparent;
     padding: 15px 10px;
-    margin: 20px 0 40px;
+    margin: 0 0 20px;
     border: none;
     border-bottom: 2px solid cornflowerblue;
     stroke: none;
+    font-size: 20px;
+}
+
+.first-stage__input:focus {
+
+    border: 2px solid cornflowerblue;
+    border-radius: 7px;
+    outline: none;
 }

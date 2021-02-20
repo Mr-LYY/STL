@@ -106,32 +106,40 @@
                             <fieldset class="first-stage__fieldset first-stage__fieldset_active">
                                 <p class="first-stage__text">Этап 1/4 - Данные игрока</p>
                                 <label class="first-stage__label">
-                                    <input type="text" minlength="2" id="first-stage__name" class="first-stage__input" placeholder="Имя игрока" required>
+                                    <input type="text" minlength="2" id="player-name" class="first-stage__input" placeholder="Имя игрока" required>
+                                    <span class="player-name-error first-stage__input-error">Error</span>
                                 </label>
                                 <label class="first-stage__label">
-                                    <input type="text" id="lastname" class="first-stage__input" placeholder="Фамилия игрока" required>
+                                    <input type="text" minlength="2" id="player-lastname" class="first-stage__input" placeholder="Фамилия игрока" required>
+                                    <span class="player-lastname-error first-stage__input-error"></span>
                                 </label>
                                 
                                 <label class="first-stage__label">
-                                    <input type="text" id="patronymic" class="first-stage__input" placeholder="Отчество игрока" required>
+                                    <input type="text" minlength="2" id="player-patronymic" class="first-stage__input" placeholder="Отчество игрока" required>
+                                    <span class="player-patronymic-error first-stage__input-error"></span>
                                 </label>
                                 
                                 <label class="first-stage__label">
-                                    <input type="date" id="birthday" class="first-stage__input" placeholder="Дата рождения игрока" required>
+                                    <span class="first-stage__heading">Дата рождения игрока</span>
+                                    <input type="date" id="birthday" class="first-stage__input" required>
+                                    <span class="birthday-error first-stage__input-error"></span>
                                 </label>
 
                                 <label class="first-stage__label">
-                                    <input type="text" id="birthday" class="first-stage__input" placeholder="Город" required>
+                                    <input type="text" minlength="2" id="city" class="first-stage__input" placeholder="Город" required>
+                                    <span class="city-error first-stage__input-error"></span>
                                 </label>
 
-                                <label for="sex-choice" class="first-stage__label"></label>
-                              <div class="first-stage__sex-case">
-                                    <input type="radio" name="sex-choice" class="first-stage__input" value="male" id="male" required>
-                                    <span>Мужской</span>
-                                    <input type="radio" name="sex-choice" class="first-stage__input" value="female" id="female" required>
-                                    <span>Женский</span>
-                              </div>
-
+                                <label for="sex-choice" class="first-stage__label">
+                                    <div class="first-stage__sex-case">
+                                        <input type="radio" name="sex-choice" class="first-stage__input" value="male" id="sex" required>
+                                        <span>Мужской</span>
+                                        <input type="radio" name="sex-choice" class="first-stage__input" value="female" id="sex" required>
+                                        <span>Женский</span>
+                                    </div>
+                                    <span class="sex-error first-stage__input-error"></span>
+                                </label>
+                              
                                 <button class="first-stage__btn" type="submit">Следующий шаг</button>
                             </fieldset>
 
@@ -139,11 +147,13 @@
                                 <p class="first-stage__text">Этап 2/4 - Данные представителя</p>
                                 <button class="first-stage__prevBtn">&larr;Назад</button>
                                 <label class="first-stage__label">
-                                    <input type="text" id="first-stage__name" class="first-stage__input" placeholder="ФИО представителя" required>
+                                    <input type="text" minlength="6" id="parent-name" class="first-stage__input" placeholder="ФИО представителя" required>
+                                    <span class="parent-name-error first-stage__input-error"></span>
                                 </label>
                                 
                                 <label class="first-stage__label">
-                                    <input type="tel" id="birthday" class="first-stage__input" placeholder="Телефон представителя" required>
+                                    <input type="tel" minlength="10" id="parent-tel" class="first-stage__input" placeholder="Телефон представителя" required>
+                                    <span class="parent-tel-error first-stage__input-error"></span>
                                 </label>
                                 
                                 <button class="first-stage__btn" type="submit">Следующий шаг</button>
@@ -153,14 +163,17 @@
                                 <p class="first-stage__text">Этап 3/4 - Информация о тренировках</p>
                                 <button class="first-stage__prevBtn">&larr;Назад</button>
                                 <label class="first-stage__label">
-                                    <input type="text" id="first-stage__name" class="first-stage__input" placeholder="ФИО тренера">
+                                    <input type="text" minlength="6" id="coach-fio" class="first-stage__input" placeholder="ФИО тренера" required>
+                                    <span class="coach-fio-error first-stage__input-error"></span>
                                 </label>
                                 <label class="first-stage__label">
-                                    <input type="text" id="lastname" class="first-stage__input" placeholder="Место занятий">
+                                    <input type="text" minlength="2" id="train-place" class="first-stage__input" placeholder="Место занятий" required>
+                                    <span class="train-place-error first-stage__input-error"></span>
                                 </label>
                                 
                                 <label class="first-stage__label">
-                                    <input type="number" id="patronymic" class="first-stage__input" placeholder="Год начала занятий теннисом">
+                                    <input type="number" minlength="4" id="year-start" class="first-stage__input" placeholder="Год начала занятий теннисом" required>
+                                    <span class="year-start-error first-stage__input-error"></span>
                                 </label>
                                 
                                 <button class="first-stage__btn" type="submit">Следующий шаг</button>
@@ -169,17 +182,21 @@
                             <fieldset class="first-stage__fieldset">
                                 <p class="first-stage__text">Этап 4/4 - Документы ШТЛ</p>
                                 <button class="first-stage__prevBtn">&larr;Назад</button>
+                                <div class="first-stage__docs-case">
+                                    <img src="./images/regulation_STL.png" class="first-stage__docs" alt="">
+                                    <img src="./images/codex_STL.png" class="first-stage__docs" alt="">
+                                    <img src="./images/contract_STL.png" class="first-stage__docs" alt="">
+                                </div>
                                 <label class="first-stage__label">
-                                    <input type="radio" name="sex-choice" class="first-stage__input" value="male" id="male" required>
-                                    <span>С документами ознакомлен и полностью согласен(-а)</span>
+                                    <input type="radio" class="first-stage__input" value="male" id="doc-submit" required>
+                                    <span class="first-stage__commit">С документами ознакомлен и полностью согласен(-а)</span>
+                                    <span class="doc-submit-error first-stage__input-error"></span>
                                 </label>
-
                                 <button class="first-stage__btn" type="submit">Завершить регистрацию</button>
                             </fieldset>
 
                         </form>
                     </div>
-                    <!--<img class="first-stage__profile-image" src="./images/инст-аватар.jpg">-->
                 </section>
             </main>
             <footer class="footer">

@@ -1,0 +1,15 @@
+.first-stage__docs {
+
+    width: 150px;
+    margin-right: 20px;
+    box-shadow: 0 0 11px 2px grey;
+}
+
+@media screen and (max-width: 768px) {
+
+    .first-stage__docs {
+
+        width: 90%;
+        margin: 20px 0;
+    }
+}

@@ -13,5 +13,16 @@
 @import url(../blocks/first-stage/__text/first-stage__text.css);
 @import url(../blocks/first-stage/__image/first-stage__image.css);
 @import url(../blocks/first-stage/__input/_error/form__input_type_error.css);
+@import url(../blocks/first-stage/__input-error/first-stage__input-error.css);
+@import url(../blocks/first-stage/__input-error/_active/first-stage__input-error_active.css);
+@import url(../blocks/first-stage/__btn/_inactive/first-stage__btn_inactive.css);
+@import url(../blocks/first-stage/__input/_ok/form__input_type_ok.css);
+@import url(../blocks/first-stage/__sex-case/first-stage__sex-case.css);
+@import url(../blocks/first-stage/__heading/first-stage__heading.css);
+@import url(../blocks/first-stage/__docs-case/first-stage__docs-case.css);
+@import url(../blocks/first-stage/__docs/first-stage__docs.css);
+@import url();
+@import url();
+@import url();
 @import url();
 @import url();
