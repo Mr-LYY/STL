@@ -1,0 +1,25 @@
+.sign__form-case {
+
+    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
+    width: 400px;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+@media screen and (max-width: 590px) {
+
+    .sign__form-case {
+
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .sign__form-case {
+
+        min-height: 0;
+        padding-bottom: 40px;
+    }
+}

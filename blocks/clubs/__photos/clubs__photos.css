@@ -4,3 +4,12 @@
     height: 250px;
     object-fit: cover;
 }
+
+@media screen and (max-width: 450px) {
+
+    .clubs__photos {
+
+        width: 300px;
+        height: 200px;
+    }
+}

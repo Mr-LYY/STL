@@ -1,5 +1,15 @@
 .clubs__info {
 
-    margin-left: 100px;
+    margin-left: 60px;
     
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .clubs__info {
+
+        margin: 0;
+        text-align: center;
+    }
 }

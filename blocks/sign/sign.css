@@ -1,24 +1,8 @@
 .sign {
 
-    font-family: 'Gothic', 'Arial', 'Helvetica', sans-serif;
-    width: 400px;
-    min-height: 500px;
     margin: 0 auto;
-}
-
-@media screen and (max-width: 590px) {
-
-    .sign {
-
-        width: 300px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    .sign {
-
-        min-height: 0;
-        padding-bottom: 40px;
-    }
+    background-color: white;
+    border-radius: 15px;
+    min-width: 100%;
+    margin-top: 30px;
 }
