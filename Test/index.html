@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Document</title>
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <section class="players-sheet">
+        <template class="players">
+            <div class="player">
+                <p class="number"></p>
+                <p class="name"></p>
+                <p class="city"></p>
+                <p class="points"></p>
+            </div>
+        </template>
+        <button type="button" class="button">Создать список участников</button>
+        <label>
+            <p class="">Колво групп</p>
+            <input type="number" min="1" max="4" class="input"></label>
+        <button type="button" id="seed" class="button">Жеребьёвка</button>
+        <button type="button" id="seedPlayers" class="button">Заселить игроками</button>
+    </section>
+    <section class="groups">
+        <template class="group-item">
+            <div id="group-players" class="group-players">
+                <p id="grpPlayerName" class="name"></p>
+                <p class="points"></p>
+            </div>
+        </template>
+        <template class="group-template">
+            <p class="group-number"></p>
+            <div class="group">
+                <p class="group-player"></p>
+            </div>
+        </template>
+    </section>
+</body>
+</html>
