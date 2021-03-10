@@ -137,12 +137,27 @@ const createGrpSection = (i) => {
     grpItem.querySelector('.group-number').textContent = `Группа № ${i + 1}`
     grpItem.querySelector('.group-player').textContent = putSeededPlayer(i)
 
+    putNotSeededPlayers(arr. groupsQty).forEach((elem) => {
+
+        
+    });
+
+
+    return grpItem
+}
+
+
+
+
+const fillGroupsWithOtherPlayers = () => {
+
     /*const newPlayer = document.createElement('p')
     newPlayer.textContent = putOtherPlayersInGroups(players, grpInput)[i].name
     grpItem.querySelector('.group-player').append(newPlayer)*/
 
-    return grpItem
+
 }
+
 
 const seedFunc = (groupsQty) => {
         
